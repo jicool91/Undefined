@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getDate(str) {
+            
+            var check = str.match(/(\d{4})-(\d{1,2})-(\d{1,2})/);
+            console.log(check);
+            return new Date(check[2], check[3], check[1]);
+        }
+
+
+        var date = getDate("2017-17-06");
+    </script>
+</body>
+</html>

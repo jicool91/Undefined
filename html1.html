@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>    
+    <script>
+/*
+>умеешь элементы создавать?
+  var div = document.createElement('div')
+  создаст пустой div например
+>Вкладывать элементы друг в друга?
+  parEl.appendChild(chEl)
+  вложит chEl в parEl
+>Менять текст внутри элемента
+  el.textContent = 'bla'
+  запишет внутрь el 'bla'
+>менять значение атрибута элемента
+  el.setAttribute('name','test')
+  изменит у el атрибут name на значение test
+*/
+var arr = [
+            {to: '/service', 'title':'сервис'},
+            {to: '/bank', 'title':'банк'},
+            {to: '/home', 'title':'главная'},
+            {to: '/portfolio', 'title':'портфолио'},
+            {to: '/news', 'title':'новости'},
+            {to: '/cabinet', 'title':'личный кабинет'}
+          ];
+var array = arr.reduce(function(ul, item) {
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    a.setAttribute('href', item.to);
+    a.textContent = item.title;
+    li.appendChild(a);
+    ul.appendChild(li);
+    return ul;
+}, document.createElement('ul'));
+
+document.body.appendChild(array);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

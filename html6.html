@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [
+            { id : 1 },
+            { id : 123 },
+            { id : 1 },
+            { id : 1 },
+            { id : 2 },
+            { id : 123 },
+            { id : 123 },
+            { id : 123 }
+        ];
+
+        [{id:1 , count: 3}]
+
+        var newArr = arr.reduce(function(result, item) {
+            var i = arr.filter(function(el) {
+                var x = [];
+                if(el.id == item.id)
+                return x.push(el.id);
+            });
+           console.log(i);
+            var count = 0;
+            if(i) {
+               count++
+            } else {
+                result.push({id:item.id, count: 1})
+            }
+
+
+            return result;
+        }, []);
+
+       
+    </script>
+</body>
+</html>

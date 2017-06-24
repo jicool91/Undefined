@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = 'Hello my big world gjosgjo ejdgu [egu eytoh fioweri hqwirqog gfq hwiq wyt qhjq fgqwwtyq!';
+        var letters = 'aeyuio';
+        var strArr = str.split('');
+
+        var newStr = strArr.filter(function(item, index, array) {            
+            return letters.indexOf(item) == -1;
+        });
+
+        var z = newStr.join(' ');
+
+        console.log(newStr, z);
+    </script>   
+</body>
+</html>

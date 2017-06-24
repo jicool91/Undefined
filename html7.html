@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Book(title, price) {
+            this.title = title;
+            this.price = price;
+        }
+        Book.prototype.show =function() {
+            console.log(this.title + ' = ' + this.price);
+        }
+
+        var book = new Book('Профессиональный JS', 2100);
+        
+    </script>
+</body>
+</html>
