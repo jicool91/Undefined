@@ -1,5 +1,6 @@
 var string = 'Hello   g';
 
+
 function letters(str) {
   var vowel = 'aeyuio';
   var cntVowel = 0;
