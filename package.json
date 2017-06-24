@@ -1,0 +1,22 @@
+{
+  "name": "test-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CoffeeMachine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jicool91/Undefined.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jicool91/Undefined/issues"
+  },
+  "homepage": "https://github.com/jicool91/Undefined#readme",
+  "devDependencies": {
+    "eslint": "^4.1.0"
+  }
+}
