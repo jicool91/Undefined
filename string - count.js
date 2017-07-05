@@ -5,7 +5,7 @@ function strLength(string) {
   }).length;
 }
 
-'я хуй знает куда еще короче, все отлично работает'.split(' ').filter(function(el) {
+'Some string'.split(' ').filter(function(el) {
     return el;
   }).length;
 
